@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+/* Dark mode ko class-based banane ke liye (Tailwind v4 mein manually define karna parta hai) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* ===== Fonts ===== */
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Fira Code", ui-monospace, SFMono-Regular, monospace;
+
+  /* ===== Brand / Primary ===== */
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
+
+  /* ===== Semantic Colors ===== */
+  --color-success-50: #f0fdf4;
+  --color-success-500: #22c55e;
+  --color-success-600: #16a34a;
+  --color-success-700: #15803d;
+
+  --color-warning-50: #fffbeb;
+  --color-warning-500: #f59e0b;
+  --color-warning-600: #d97706;
+  --color-warning-700: #b45309;
+
+  --color-danger-50: #fef2f2;
+  --color-danger-500: #ef4444;
+  --color-danger-600: #dc2626;
+  --color-danger-700: #b91c1c;
+
+  --color-info-50: #eff6ff;
+  --color-info-500: #3b82f6;
+  --color-info-600: #2563eb;
+  --color-info-700: #1d4ed8;
+
+  /* ===== Surface / Background (Light mode default) ===== */
+  --color-bg: #ffffff;
+  --color-bg-secondary: #f8fafc;
+  --color-bg-sidebar: #f8fafc;
+  --color-bg-card: #ffffff;
+  --color-bg-hover: #f1f5f9;
+
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #475569;
+  --color-text-muted: #94a3b8;
+
+  --color-border: #e2e8f0;
+}
+
+/* ===== Dark Mode Overrides ===== */
+.dark {
+  --color-bg: #0d1117;
+  --color-bg-secondary: #161b22;
+  --color-bg-sidebar: #0d1117;
+  --color-bg-card: #161b22;
+  --color-bg-hover: #1e2530;
+
+  --color-text-primary: #e6edf3;
+  --color-text-secondary: #adbac7;
+  --color-text-muted: #7d8590;
+
+  --color-border: #21262d;
+}
+
+/* ===== Base Layout Reset ===== */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Scrollbar styling (docs sites usually customize this) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-border);
+  border-radius: 9999px;
+}
+
+/* Code blocks default look */
+code {
+  font-family: var(--font-mono);
+}
+
+/* index.css ya global.css ke andar */
+@layer utilities {
+  .inline-code {
+    @apply bg-zinc-100 dark:bg-zinc-800 text-rose-600 dark:text-rose-400 px-1.5 py-0.5 rounded font-mono text-[13px] border border-zinc-200 dark:border-zinc-700;
+  }
+}
