@@ -220,7 +220,7 @@ export default function CreateFirstPage() {
       <NavigationButtons
         prevPath="/notes/intro-to-html-tags-and-elements"
         prevLabel="Introduction To HTML Tags & Elements"
-        nextPath="/notes/heading-in-html"
+        nextPath="/notes/headings-in-html"
         nextLabel="Headings (H1-H6)"
       />
     </article>
