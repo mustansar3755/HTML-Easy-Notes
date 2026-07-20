@@ -9,6 +9,7 @@ import HtmlHeadings from "./pages/HtmlHeadings";
 import HtmlParagraphsAndFormatting from "./pages/HtmlParagraphsAndFormatting";
 import HtmlBlockVsInline from "./pages/HtmlBlockVsInline";
 import HtmlLists from "./pages/HtmlLists";
+import HtmlLinks from "./pages/HtmlLinks";
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
         <Route path="paragraph-and-other-formattings" element={<HtmlParagraphsAndFormatting />} />
         <Route path="block-vs-inline" element={<HtmlBlockVsInline />} />
         <Route path="html-lists" element={<HtmlLists />} />
+        <Route path="hyperlinks-and-anchor-tag" element={<HtmlLinks />} />
         {/* aage aur pages yahan add karenge:
         <Route path="installing-git" element={<InstallingGit />} /> */}
       </Route>

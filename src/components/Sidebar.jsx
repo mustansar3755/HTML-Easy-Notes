@@ -6,7 +6,10 @@ const sections = [
     links: [
       { to: "/notes/introduction", label: "Introduction to HTML" },
       { to: "/notes/html-basic-structure", label: "HTML Document Structure" },
-      { to: "/notes/intro-to-html-tags-and-elements", label: "Introduction To HTML Tags & Elements" },
+      {
+        to: "/notes/intro-to-html-tags-and-elements",
+        label: "Introduction To HTML Tags & Elements",
+      },
       { to: "/notes/create-first-page", label: "Creating Your First Page" },
     ],
   },
@@ -14,7 +17,10 @@ const sections = [
     title: "Text & Structure",
     links: [
       { to: "/notes/headings-in-html", label: "Headings (h1 - h6)" },
-      { to: "/notes/paragraph-and-other-formattings", label: "Paragraphs & Formatting" },
+      {
+        to: "/notes/paragraph-and-other-formattings",
+        label: "Paragraphs & Formatting",
+      },
       { to: "/notes/block-vs-inline", label: "Block Vs Inline" },
       { to: "/notes/html-lists", label: "List In HTML (UL & OL)" },
     ],
@@ -22,7 +28,7 @@ const sections = [
   {
     title: "Links & Media",
     links: [
-      { to: "/notes/links-anchors", label: "Hyperlinks & Anchors" },
+      { to: "/notes/hyperlinks-and-anchor-tag", label: "Hyperlinks & Anchors" },
       { to: "/notes/images-attributes", label: "Images & Attributes" },
       { to: "/notes/audio-video", label: "Audio & Video Elements" },
     ],
@@ -46,7 +52,7 @@ export default function Sidebar() {
           <p className="text-xs font-semibold uppercase tracking-wider text-text-muted pb-2 mb-3 px-2 border-b border-mauve-400/20">
             {section.title}
           </p>
-          
+
           <div className="flex flex-col gap-1">
             {section.links.map((link) => (
               <NavLink

@@ -169,9 +169,9 @@ export default function HtmlLists() {
 
       {/* Router Navigation Links */}
       <NavigationButtons 
-        prevPath="/html-block-vs-inline" 
+        prevPath="/notes/html-block-vs-inline" 
         prevLabel="Block vs Inline" 
-        nextPath="/html-links" 
+        nextPath="/notes/hyperlinks-and-anchor-tag" 
         nextLabel="HTML Links & Anchors" 
       />
     </article>
