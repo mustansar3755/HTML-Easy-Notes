@@ -5,6 +5,7 @@ import { useOutletContext } from "react-router-dom";
 import Callout from "../components/common/Callout";
 
 import { content } from "../data/intro.js";
+import NavigationButtons from "../components/HtmlStructure/NavigationButtons.jsx";
 
 // TOC items updated - ab saare sections table of contents mein show honge
 const tocItems = {
@@ -13,7 +14,7 @@ const tocItems = {
     { id: "three-pillars", label: "The Three Pillars" },
     { id: "tag-vs-element", label: "Tag vs Element" },
     { id: "how-browsers-read", label: "How Browsers Read HTML" },
-   
+
     { id: "whats-next", label: "What's Next" },
   ],
   ur: [
@@ -21,7 +22,7 @@ const tocItems = {
     { id: "three-pillars", label: "Web Development ke Pillars" },
     { id: "tag-vs-element", label: "Tag aur Element mein Farq" },
     { id: "how-browsers-read", label: "Browsers Kaise Read Karte Hain" },
-  
+
     { id: "whats-next", label: "Aage Kya Hai" },
   ],
 };
@@ -52,11 +53,11 @@ export default function Introduction() {
           <Code2 size={22} className="text-primary-500" />
           {t.whatIsTitle}
         </h2>
-        <p 
+        <p
           className="text-text-secondary leading-relaxed mb-4"
           dangerouslySetInnerHTML={{ __html: t.whatIs1 }}
         />
-        <p 
+        <p
           className="text-text-secondary leading-relaxed"
           dangerouslySetInnerHTML={{ __html: t.whatIs2 }}
         />
@@ -84,7 +85,7 @@ export default function Introduction() {
             <p className="font-semibold text-primary-600 dark:text-primary-400 mb-1.5 text-sm">
               {t.pillar1Title}
             </p>
-            <p 
+            <p
               className="text-text-secondary text-sm leading-relaxed"
               dangerouslySetInnerHTML={{ __html: t.pillar1Text }}
             />
@@ -93,7 +94,7 @@ export default function Introduction() {
             <p className="font-semibold text-primary-600 dark:text-primary-400 mb-1.5 text-sm">
               {t.pillar2Title}
             </p>
-            <p 
+            <p
               className="text-text-secondary text-sm leading-relaxed"
               dangerouslySetInnerHTML={{ __html: t.pillar2Text }}
             />
@@ -102,7 +103,7 @@ export default function Introduction() {
             <p className="font-semibold text-primary-600 dark:text-primary-400 mb-1.5 text-sm">
               {t.pillar3Title}
             </p>
-            <p 
+            <p
               className="text-text-secondary text-sm leading-relaxed"
               dangerouslySetInnerHTML={{ __html: t.pillar3Text }}
             />
@@ -116,13 +117,15 @@ export default function Introduction() {
           <HelpCircle size={22} className="text-primary-500" />
           {t.conceptTitle}
         </h2>
-        <p className="text-text-secondary leading-relaxed mb-4">{t.conceptIntro}</p>
+        <p className="text-text-secondary leading-relaxed mb-4">
+          {t.conceptIntro}
+        </p>
         <div className="bg-bg-sidebar border border-border rounded-xl p-4 space-y-3">
-          <p 
+          <p
             className="text-text-secondary text-sm leading-relaxed"
             dangerouslySetInnerHTML={{ __html: t.conceptTag }}
           />
-          <p 
+          <p
             className="text-text-secondary text-sm leading-relaxed"
             dangerouslySetInnerHTML={{ __html: t.conceptElement }}
           />
@@ -135,7 +138,7 @@ export default function Introduction() {
           <ArrowRight size={22} className="text-primary-500" />
           {t.howBrowserTitle}
         </h2>
-        <p 
+        <p
           className="text-text-secondary leading-relaxed"
           dangerouslySetInnerHTML={{ __html: t.howBrowserText }}
         />
@@ -178,7 +181,7 @@ export default function Introduction() {
           <Sparkles size={22} className="text-primary-500" />
           {t.historyTitle}
         </h2>
-        <p 
+        <p
           className="text-text-secondary leading-relaxed"
           dangerouslySetInnerHTML={{ __html: t.historyText }}
         />
@@ -195,14 +198,12 @@ export default function Introduction() {
       <hr className="border-border mb-8" />
 
       {/* Navigation Buttons */}
-      <div className="flex justify-between gap-4">
-        <button className="bg-danger-600 cursor-pointer hover:bg-danger-700 text-white px-6 py-3 rounded-lg font-medium transition-colors opacity-50 cursor-not-allowed" disabled>
-          Previous: Introduction
-        </button>
-        <button className="bg-primary-600 cursor-pointer hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
-          Next: HTML Document Structure
-        </button>
-      </div>
+      <NavigationButtons
+        // prevPath="/notes/introduction"
+        // prevLabel="Introduction"
+        nextPath="/notes/html-basic-structure"
+        nextLabel="HTML Document Structure"
+      />
     </article>
   );
 }
