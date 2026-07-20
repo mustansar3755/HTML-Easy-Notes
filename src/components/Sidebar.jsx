@@ -14,8 +14,8 @@ const sections = [
     title: "Text & Structure",
     links: [
       { to: "/notes/headings-in-html", label: "Headings (h1 - h6)" },
-      { to: "/notes/paragraphs-formatting", label: "Paragraphs & Formatting" },
-      { to: "/notes/lists-in-html", label: "Lists (Ordered & Unordered)" },
+      { to: "/notes/paragraph-and-other-formattings", label: "Paragraphs & Formatting" },
+      { to: "/notes/block-vs-inline", label: "Block Vs Inline" },
     ],
   },
   {

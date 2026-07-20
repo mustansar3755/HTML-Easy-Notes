@@ -160,7 +160,7 @@ export default function HtmlHeadings() {
       <NavigationButtons 
         prevPath="/notes/create-first-page" 
         prevLabel="Setup &amp; First Page" 
-        nextPath="/notes/html-paragraphs" 
+        nextPath="/notes/paragraph-and-other-formattings" 
         nextLabel="Paragraph Mechanics" 
       />
     </article>
