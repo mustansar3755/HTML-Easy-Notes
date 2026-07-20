@@ -86,8 +86,14 @@ export default function HtmlDocumentStructure() {
           <Box size={22} className="text-primary-500" />
           {t.whatIsTitle}
         </h2>
-        <p className="text-text-secondary leading-relaxed mb-4" dangerouslySetInnerHTML={{ __html: t.whatIs1 }} />
-        <p className="text-text-secondary leading-relaxed" dangerouslySetInnerHTML={{ __html: t.whatIs2 }} />
+        <p
+          className="text-text-secondary leading-relaxed mb-4"
+          dangerouslySetInnerHTML={{ __html: t.whatIs1 }}
+        />
+        <p
+          className="text-text-secondary leading-relaxed"
+          dangerouslySetInnerHTML={{ __html: t.whatIs2 }}
+        />
       </section>
 
       {/* Callout Box */}
@@ -101,11 +107,13 @@ export default function HtmlDocumentStructure() {
       <section className="mb-10" id="html-boilerplate">
         <h2 className="text-2xl font-semibold text-text-primary mb-4 flex items-center gap-2">
           <FileCode2 size={22} className="text-primary-500" />
-          {language === "ur" ? "HTML Boilerplate Code" : "Standard HTML Boilerplate"}
+          {language === "ur"
+            ? "HTML Boilerplate Code"
+            : "Standard HTML Boilerplate"}
         </h2>
         <p className="text-text-secondary leading-relaxed mb-4">
-          {language === "ur" 
-            ? "Kishi bhi HTML document ko shuru karne ke liye yeh bunyadi boilerplate code istemaal hota hai:" 
+          {language === "ur"
+            ? "Kishi bhi HTML document ko shuru karne ke liye yeh bunyadi boilerplate code istemaal hota hai:"
             : "Every HTML document starts with this standard layout boilerplate structure:"}
         </p>
         <CodeBlock code={boilerplateCode} className="text-text-secondary" />
@@ -117,9 +125,18 @@ export default function HtmlDocumentStructure() {
           <FileCode2 size={22} className="text-primary-500" />
           {t.doctypeTitle}
         </h2>
-        <p className="text-text-secondary leading-relaxed mb-4" dangerouslySetInnerHTML={{ __html: t.doctypeText1 }} />
-        <CodeBlock code="<!DOCTYPE html>" className="text-primary-600 dark:text-primary-400" />
-        <p className="text-text-secondary leading-relaxed" dangerouslySetInnerHTML={{ __html: t.doctypeText2 }} />
+        <p
+          className="text-text-secondary leading-relaxed mb-4"
+          dangerouslySetInnerHTML={{ __html: t.doctypeText1 }}
+        />
+        <CodeBlock
+          code="<!DOCTYPE html>"
+          className="text-primary-600 dark:text-primary-400"
+        />
+        <p
+          className="text-text-secondary leading-relaxed"
+          dangerouslySetInnerHTML={{ __html: t.doctypeText2 }}
+        />
       </section>
 
       {/* Section 3: <html> Element */}
@@ -128,9 +145,18 @@ export default function HtmlDocumentStructure() {
           <ListTree size={22} className="text-primary-500" />
           {t.htmlElTitle}
         </h2>
-        <p className="text-text-secondary leading-relaxed mb-4" dangerouslySetInnerHTML={{ __html: t.htmlElText1 }} />
-        <CodeBlock code={`<html lang="en">\n  ...\n</html>`} className="text-text-secondary" />
-        <p className="text-text-secondary leading-relaxed" dangerouslySetInnerHTML={{ __html: t.htmlElText2 }} />
+        <p
+          className="text-text-secondary leading-relaxed mb-4"
+          dangerouslySetInnerHTML={{ __html: t.htmlElText1 }}
+        />
+        <CodeBlock
+          code={`<html lang="en">\n  ...\n</html>`}
+          className="text-text-secondary"
+        />
+        <p
+          className="text-text-secondary leading-relaxed"
+          dangerouslySetInnerHTML={{ __html: t.htmlElText2 }}
+        />
       </section>
 
       {/* Section 4: <head> Section */}
@@ -139,12 +165,17 @@ export default function HtmlDocumentStructure() {
           <LayoutTemplate size={22} className="text-primary-500" />
           {t.headTitle}
         </h2>
-        <p className="text-text-secondary leading-relaxed mb-5" dangerouslySetInnerHTML={{ __html: t.headIntro }} />
-        
+        <p
+          className="text-text-secondary leading-relaxed mb-5"
+          dangerouslySetInnerHTML={{ __html: t.headIntro }}
+        />
+
         {/* Extracted Card Grid Component */}
         <HeadMetaCards t={t} />
 
-        <p className="text-text-secondary leading-relaxed text-sm italic">{t.headNote}</p>
+        <p className="text-text-secondary leading-relaxed text-sm italic">
+          {t.headNote}
+        </p>
       </section>
 
       {/* Section 5: <body> Section */}
@@ -153,9 +184,18 @@ export default function HtmlDocumentStructure() {
           <Rows3 size={22} className="text-primary-500" />
           {t.bodyTitle}
         </h2>
-        <p className="text-text-secondary leading-relaxed mb-4" dangerouslySetInnerHTML={{ __html: t.bodyText1 }} />
-        <CodeBlock code={`<body>\n  <h1>Welcome</h1>\n  <p>This is visible content.</p>\n</body>`} className="text-text-secondary" />
-        <p className="text-text-secondary leading-relaxed" dangerouslySetInnerHTML={{ __html: t.bodyText2 }} />
+        <p
+          className="text-text-secondary leading-relaxed mb-4"
+          dangerouslySetInnerHTML={{ __html: t.bodyText1 }}
+        />
+        <CodeBlock
+          code={`<body>\n  <h1>Welcome</h1>\n  <p>This is visible content.</p>\n</body>`}
+          className="text-text-secondary"
+        />
+        <p
+          className="text-text-secondary leading-relaxed"
+          dangerouslySetInnerHTML={{ __html: t.bodyText2 }}
+        />
       </section>
 
       {/* Section 6: Comments */}
@@ -164,8 +204,13 @@ export default function HtmlDocumentStructure() {
           <MessageSquareText size={22} className="text-primary-500" />
           {t.commentsTitle}
         </h2>
-        <p className="text-text-secondary leading-relaxed mb-4">{t.commentsText}</p>
-        <CodeBlock code="<!-- This is a comment and will not be shown on the page -->" className="text-text-secondary" />
+        <p className="text-text-secondary leading-relaxed mb-4">
+          {t.commentsText}
+        </p>
+        <CodeBlock
+          code="<!-- This is a comment and will not be shown on the page -->"
+          className="text-text-secondary"
+        />
       </section>
 
       {/* Section 7: Semantic Layout */}
@@ -174,8 +219,14 @@ export default function HtmlDocumentStructure() {
           <LayoutTemplate size={22} className="text-primary-500" />
           {t.semanticTitle}
         </h2>
-        <CodeBlock code={`<body>\n  <header>Site logo and navigation</header>\n  <nav>Main menu links</nav>\n  <main>\n    <section>Primary content</section>\n  </main>\n  <footer>Copyright and links</footer>\n</body>`} className="text-text-secondary" />
-        <p className="text-text-secondary leading-relaxed" dangerouslySetInnerHTML={{ __html: t.semanticText }} />
+        <CodeBlock
+          code={`<body>\n  <header>Site logo and navigation</header>\n  <nav>Main menu links</nav>\n  <main>\n    <section>Primary content</section>\n  </main>\n  <footer>Copyright and links</footer>\n</body>`}
+          className="text-text-secondary"
+        />
+        <p
+          className="text-text-secondary leading-relaxed"
+          dangerouslySetInnerHTML={{ __html: t.semanticText }}
+        />
       </section>
 
       {/* Section 8: Full Example */}
@@ -184,8 +235,13 @@ export default function HtmlDocumentStructure() {
           <FileCode2 size={22} className="text-primary-500" />
           {t.exampleTitle}
         </h2>
-        <p className="text-text-secondary leading-relaxed mb-4">{t.exampleText}</p>
-        <CodeBlock code={`<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="UTF-8">\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\n  <title>My First Page</title>\n</head>\n<body>\n  <header>\n    <h1>My Website</h1>\n  </header>\n  <main>\n    <p>This is the main content of the page.</p>\n  </main>\n  <footer>\n    <p>&copy; 2026 My Website</p>\n  </footer>\n</body>\n</html>`} className="text-text-secondary" />
+        <p className="text-text-secondary leading-relaxed mb-4">
+          {t.exampleText}
+        </p>
+        <CodeBlock
+          code={`<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="UTF-8">\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\n  <title>My First Page</title>\n</head>\n<body>\n  <header>\n    <h1>My Website</h1>\n  </header>\n  <main>\n    <p>This is the main content of the page.</p>\n  </main>\n  <footer>\n    <p>&copy; 2026 My Website</p>\n  </footer>\n</body>\n</html>`}
+          className="text-text-secondary"
+        />
       </section>
 
       {/* Section 9: Best Practices */}
@@ -195,29 +251,33 @@ export default function HtmlDocumentStructure() {
           {t.bestTitle}
         </h2>
         <ul className="space-y-3 text-text-secondary leading-relaxed">
-          {[t.best1, t.best2, t.best3, t.best4, t.best5].map((bestText, idx) => (
-            <li key={idx} className="flex gap-2">
-              <span className="text-primary-500 shrink-0">•</span>
-              <span dangerouslySetInnerHTML={{ __html: bestText }} />
-            </li>
-          ))}
+          {[t.best1, t.best2, t.best3, t.best4, t.best5].map(
+            (bestText, idx) => (
+              <li key={idx} className="flex gap-2">
+                <span className="text-primary-500 shrink-0">•</span>
+                <span dangerouslySetInnerHTML={{ __html: bestText }} />
+              </li>
+            ),
+          )}
         </ul>
       </section>
 
       {/* Section 10: What's Next */}
       <section className="mb-10" id="whats-next">
-        <h2 className="text-2xl font-semibold text-text-primary mb-4">{t.nextTitle}</h2>
+        <h2 className="text-2xl font-semibold text-text-primary mb-4">
+          {t.nextTitle}
+        </h2>
         <p className="text-text-secondary leading-relaxed">{t.nextText}</p>
       </section>
 
       <hr className="border-border mb-8" />
 
       {/* Reusable Navigation Buttons with correct hooks */}
-      <NavigationButtons 
-        prevPath="/notes/introduction" 
-        prevLabel="Introduction" 
-        nextPath="/notes/tags-and-elements" 
-        nextLabel="Tags &amp; Elements" 
+      <NavigationButtons
+        prevPath="/notes/introduction"
+        prevLabel="Introduction"
+        nextPath="/notes/intro-to-html-tags-and-elements"
+        nextLabel="Tags &amp; Elements"
       />
     </article>
   );

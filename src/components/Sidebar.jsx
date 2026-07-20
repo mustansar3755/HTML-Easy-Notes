@@ -6,6 +6,7 @@ const sections = [
     links: [
       { to: "/notes/introduction", label: "Introduction to HTML" },
       { to: "/notes/html-basic-structure", label: "HTML Document Structure" },
+      { to: "/notes/intro-to-html-tags-and-elements", label: "Introduction To HTML Tags & Elements" },
       { to: "/notes/first-webpage", label: "Creating Your First Page" },
     ],
   },
