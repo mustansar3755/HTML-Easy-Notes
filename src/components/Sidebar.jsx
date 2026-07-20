@@ -29,7 +29,7 @@ const sections = [
     title: "Links & Media",
     links: [
       { to: "/notes/hyperlinks-and-anchor-tag", label: "Hyperlinks & Anchors" },
-      { to: "/notes/images-attributes", label: "Images & Attributes" },
+      { to: "/notes/images-in-html", label: "Images In HTML" },
       { to: "/notes/audio-video", label: "Audio & Video Elements" },
     ],
   },

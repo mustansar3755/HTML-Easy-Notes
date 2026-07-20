@@ -232,7 +232,7 @@ export default function HtmlLinks() {
       <NavigationButtons 
         prevPath="/notes/html-lists" 
         prevLabel="HTML Lists" 
-        nextPath="/notes/html-images" 
+        nextPath="/notes/images-in-html" 
         nextLabel="HTML Images Tag" 
       />
     </article>
