@@ -16,6 +16,7 @@ const sections = [
       { to: "/notes/headings-in-html", label: "Headings (h1 - h6)" },
       { to: "/notes/paragraph-and-other-formattings", label: "Paragraphs & Formatting" },
       { to: "/notes/block-vs-inline", label: "Block Vs Inline" },
+      { to: "/notes/html-lists", label: "List In HTML (UL & OL)" },
     ],
   },
   {
