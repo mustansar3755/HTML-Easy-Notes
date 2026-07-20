@@ -4,6 +4,7 @@ import Layout from "./components/Layout";
 import Introduction from "./pages/Introduction";
 import HtmlDocumentStructure from "./pages/HtmlDocumentStructure";
 import HtmlTagsAndElements from "./pages/HtmlTagsAndElements";
+import CreateFirstPage from "./pages/CreateFirstPage";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="introduction" element={<Introduction />} />
         <Route path="html-basic-structure" element={<HtmlDocumentStructure />} />
         <Route path="intro-to-html-tags-and-elements" element={<HtmlTagsAndElements />} />
+        <Route path="create-first-page" element={<CreateFirstPage />} />
         {/* aage aur pages yahan add karenge:
         <Route path="installing-git" element={<InstallingGit />} /> */}
       </Route>
