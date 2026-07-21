@@ -227,10 +227,10 @@ export default function HtmlForms() {
 
       {/* Router Navigation Links */}
       <NavigationButtons
-        prevPath="/notes/html-iframes"
+        prevPath="/notes/iframe-in-html"
         prevLabel="HTML iFrames"
-        nextPath="/notes/html-semantic-elements"
-        nextLabel="HTML Semantic Elements"
+        nextPath="/notes/html-table"
+        nextLabel="HTML Tables"
       />
     </article>
   );

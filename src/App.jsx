@@ -14,6 +14,7 @@ import HtmlImages from "./pages/HtmlImages";
 import HtmlAudioVideo from "./pages/Htmlaudiovideo";
 import HtmlIframes from "./pages/Htmlifram";
 import HtmlForms from "./pages/HtmlForms";
+import HtmlTables from "./pages/HtmlTables";
 
 export default function App() {
   return (
@@ -46,6 +47,7 @@ export default function App() {
         <Route path="html-audio-video" element={<HtmlAudioVideo />} />
         <Route path="iframe-in-html" element={<HtmlIframes />} />
         <Route path="html-forms-and-inputs" element={<HtmlForms />} />
+        <Route path="html-table" element={<HtmlTables />} />
         {/* aage aur pages yahan add karenge:
         <Route path="installing-git" element={<InstallingGit />} /> */}
       </Route>
