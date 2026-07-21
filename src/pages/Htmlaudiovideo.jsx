@@ -168,7 +168,7 @@ export default function HtmlAudioVideo() {
       <NavigationButtons
         prevPath="/notes/hyperlinks-and-anchor-tag"
         prevLabel="HTML Links & Anchors"
-        nextPath="/notes/html-iframes"
+        nextPath="/notes/iframe-in-html"
         nextLabel="HTML iFrames"
       />
     </article>

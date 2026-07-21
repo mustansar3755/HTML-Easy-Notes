@@ -31,6 +31,7 @@ const sections = [
       { to: "/notes/hyperlinks-and-anchor-tag", label: "Hyperlinks & Anchors" },
       { to: "/notes/images-in-html", label: "Images In HTML" },
       { to: "/notes/html-audio-video", label: "Audio & Video Elements" },
+      { to: "/notes/iframe-in-html", label: "I-frame In HTML " },
     ],
   },
   {

@@ -12,6 +12,7 @@ import HtmlLists from "./pages/HtmlLists";
 import HtmlLinks from "./pages/HtmlLinks";
 import HtmlImages from "./pages/HtmlImages";
 import HtmlAudioVideo from "./pages/Htmlaudiovideo";
+import HtmlIframes from "./pages/Htmlifram";
 
 export default function App() {
   return (
@@ -23,16 +24,26 @@ export default function App() {
       <Route path="/notes" element={<Layout />}>
         <Route index element={<Introduction />} />
         <Route path="introduction" element={<Introduction />} />
-        <Route path="html-basic-structure" element={<HtmlDocumentStructure />} />
-        <Route path="intro-to-html-tags-and-elements" element={<HtmlTagsAndElements />} />
+        <Route
+          path="html-basic-structure"
+          element={<HtmlDocumentStructure />}
+        />
+        <Route
+          path="intro-to-html-tags-and-elements"
+          element={<HtmlTagsAndElements />}
+        />
         <Route path="create-first-page" element={<CreateFirstPage />} />
         <Route path="headings-in-html" element={<HtmlHeadings />} />
-        <Route path="paragraph-and-other-formattings" element={<HtmlParagraphsAndFormatting />} />
+        <Route
+          path="paragraph-and-other-formattings"
+          element={<HtmlParagraphsAndFormatting />}
+        />
         <Route path="block-vs-inline" element={<HtmlBlockVsInline />} />
         <Route path="html-lists" element={<HtmlLists />} />
         <Route path="hyperlinks-and-anchor-tag" element={<HtmlLinks />} />
         <Route path="images-in-html" element={<HtmlImages />} />
         <Route path="html-audio-video" element={<HtmlAudioVideo />} />
+        <Route path="iframe-in-html" element={<HtmlIframes />} />
         {/* aage aur pages yahan add karenge:
         <Route path="installing-git" element={<InstallingGit />} /> */}
       </Route>
