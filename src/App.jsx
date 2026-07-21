@@ -15,6 +15,7 @@ import HtmlAudioVideo from "./pages/Htmlaudiovideo";
 import HtmlIframes from "./pages/Htmlifram";
 import HtmlForms from "./pages/HtmlForms";
 import HtmlTables from "./pages/HtmlTables";
+import HtmlSemanticElements from "./pages/HtmlSemanticElements";
 
 export default function App() {
   return (
@@ -48,6 +49,7 @@ export default function App() {
         <Route path="iframe-in-html" element={<HtmlIframes />} />
         <Route path="html-forms-and-inputs" element={<HtmlForms />} />
         <Route path="html-table" element={<HtmlTables />} />
+        <Route path="html-semantic-elements" element={<HtmlSemanticElements />} />
         {/* aage aur pages yahan add karenge:
         <Route path="installing-git" element={<InstallingGit />} /> */}
       </Route>
