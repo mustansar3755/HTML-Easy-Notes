@@ -39,7 +39,7 @@ const sections = [
     links: [
       { to: "/notes/html-forms-and-inputs", label: "Forms & Input Types" },
       { to: "/notes/html-table", label: "HTML Tables" },
-      { to: "/notes/semantic-html", label: "Semantic Elements (Layout)" },
+      { to: "/notes/html-semantic-elements", label: "Semantic Elements (Layout)" },
     ],
   },
 ];
