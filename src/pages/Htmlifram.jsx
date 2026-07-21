@@ -166,7 +166,7 @@ export default function HtmlIframes() {
       <NavigationButtons
         prevPath="/notes/html-audio-video"
         prevLabel="HTML Audio & Video"
-        nextPath="/notes/html-forms"
+        nextPath="/notes/html-forms-and-inputs"
         nextLabel="HTML Forms & Inputs"
       />
     </article>

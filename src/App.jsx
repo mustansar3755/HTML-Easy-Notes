@@ -13,6 +13,7 @@ import HtmlLinks from "./pages/HtmlLinks";
 import HtmlImages from "./pages/HtmlImages";
 import HtmlAudioVideo from "./pages/Htmlaudiovideo";
 import HtmlIframes from "./pages/Htmlifram";
+import HtmlForms from "./pages/HtmlForms";
 
 export default function App() {
   return (
@@ -44,6 +45,7 @@ export default function App() {
         <Route path="images-in-html" element={<HtmlImages />} />
         <Route path="html-audio-video" element={<HtmlAudioVideo />} />
         <Route path="iframe-in-html" element={<HtmlIframes />} />
+        <Route path="html-forms-and-inputs" element={<HtmlForms />} />
         {/* aage aur pages yahan add karenge:
         <Route path="installing-git" element={<InstallingGit />} /> */}
       </Route>
