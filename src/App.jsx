@@ -11,6 +11,7 @@ import HtmlBlockVsInline from "./pages/HtmlBlockVsInline";
 import HtmlLists from "./pages/HtmlLists";
 import HtmlLinks from "./pages/HtmlLinks";
 import HtmlImages from "./pages/HtmlImages";
+import HtmlAudioVideo from "./pages/Htmlaudiovideo";
 
 export default function App() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
         <Route path="html-lists" element={<HtmlLists />} />
         <Route path="hyperlinks-and-anchor-tag" element={<HtmlLinks />} />
         <Route path="images-in-html" element={<HtmlImages />} />
+        <Route path="html-audio-video" element={<HtmlAudioVideo />} />
         {/* aage aur pages yahan add karenge:
         <Route path="installing-git" element={<InstallingGit />} /> */}
       </Route>

@@ -30,7 +30,7 @@ const sections = [
     links: [
       { to: "/notes/hyperlinks-and-anchor-tag", label: "Hyperlinks & Anchors" },
       { to: "/notes/images-in-html", label: "Images In HTML" },
-      { to: "/notes/audio-video", label: "Audio & Video Elements" },
+      { to: "/notes/html-audio-video", label: "Audio & Video Elements" },
     ],
   },
   {
